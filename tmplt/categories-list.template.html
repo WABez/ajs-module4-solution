@@ -1,6 +1,6 @@
 <ul>
-  <li ng-repeat="item in $ctrl.items"
-  ui-sref="categoriesList.menuItems({catShortName: item.short_name})">
-    {{ item.name }} - ({{item.short_name}})
+  <li class="ng-scope" ng-repeat="item in $ctrl.items">
+  <a class="ng-binding" ui-sref="categoriesList.menuItems({catShortName: item.short_name})">
+    {{ item.name }} - ({{item.short_name}})</a>
   </li>
 </ul>
